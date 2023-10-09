@@ -1,0 +1,13 @@
+encoding: utf-8
+
+# Site settings
+title: Portfolio of Rohit Ramachandran
+description: Showcase of my work
+url: "https://rohitramachandran.com"
+baseurl: "/portfolio_jekyll" # Set to an empty string if your site is hosted on the root domain
+
+# Build settings
+markdown: kramdown
+
+# Permalinks (optional, customize the URL structure)
+permalink: /:title

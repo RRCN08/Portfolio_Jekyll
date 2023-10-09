@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+          flex-direction: column;
+  flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+}
+
+.audiobtn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 0px;
+  left: 0px;
+  border: white 3px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border 0.1s ease-in-out;
+  z-index: 1;
+}
+
+.audiobtn:hover {
+  border: #eb0029 3px solid;
+}
+.audiobtn:hover .bar {
+  background-color: #eb0029;
+}
+.audiobtn .bar {
+  display: inline-block;
+  position: absolute;
+  top: 9.4px;
+  left: -4px;
+  width: 3px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: white;
+          transform-origin: center;
+  transition: background 0.1s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
+  transition: transform 0.4s ease-in-out, background 0.1s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+.audiobtn.pause .bar-1 {
+          transform: translateX(11px) translateY(-4px) rotate(0deg);
+}
+.audiobtn.pause .bar-2 {
+          transform: translateX(18px) translateY(-4px) rotate(0deg);
+}
+.audiobtn.play .bar-1 {
+          transform: translateX(15px) translateY(-7.5px) rotate(-55deg);
+}
+.audiobtn.play .bar-2 {
+          transform: translateX(15px) translateY(-0.8px) rotate(-125deg);
+}
